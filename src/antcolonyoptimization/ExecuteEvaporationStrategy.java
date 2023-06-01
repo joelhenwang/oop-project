@@ -1,6 +1,6 @@
 package antcolonyoptimization;
 
-public class ExecutePheromoneEvapStrategy {
+public class ExecuteEvaporationStrategy {
     public void executeEvent(){
 
     }

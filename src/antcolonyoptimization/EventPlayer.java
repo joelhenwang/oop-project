@@ -5,7 +5,6 @@ import discretestochasticsimulation.PEC;
 
 public class EventPlayer {
 
-    PEC pec;
     IEvent current_I_event;
     ExecuteEventStrategy eventStrategy;
 
