@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Node {
     private final int id;
-    List<Edge> edges = new ArrayList<>();
-    List<Integer> linked = new ArrayList<>();
+    private List<Edge> edges = new ArrayList<>();
+    private List<Integer> linked = new ArrayList<>();
 
     public Node(int id){
         this.id = id;
@@ -17,7 +17,7 @@ public class Node {
             return;
         }
         linked.add(dest);
-        this.edges.add( new Edge( dest ) );
+        this.edges.add( new Edge( dest , 0) );
     }
 
     public void addEdgeToNode( int dest, double weight ){
@@ -25,11 +25,15 @@ public class Node {
             return;
         }
         linked.add(dest);
-        this.edges.add( new WeigthedEdge( dest, weight) );
+        this.edges.add( new Edge( dest, weight) );
     }
 
     public List<Edge> getEdges() {
         return edges;
+    }
+
+    public List<Integer> getLinked() {
+        return linked;
     }
 
     public int getId() {
@@ -37,7 +41,8 @@ public class Node {
     }
 
     public String toString(){
-        return Integer.toString(id);
+        return "Node " + Integer.toString(id) + " with " +
+                Integer.toString(edges.size()) + " edges";
     }
 }
 

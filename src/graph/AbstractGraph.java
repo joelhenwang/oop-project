@@ -60,4 +60,8 @@ public class AbstractGraph implements IGraph{
 
         return hamiltonean_path;
     }
+
+    public int getMaxEdges() {
+        return max_edges;
+    }
 }

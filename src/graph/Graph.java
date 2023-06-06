@@ -44,7 +44,7 @@ public class Graph extends AbstractGraph{
             int node2 = rand.nextInt(n_nodes);
 
             if( node1 == node2 ) continue;
-            if( adjList[node1].linked.contains(node2) ) continue;
+            if( adjList[node1].getLinked().contains(node2) ) continue;
 
 
             addEdgeToList( node1, node2 );

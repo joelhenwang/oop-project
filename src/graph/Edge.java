@@ -1,15 +1,32 @@
 package graph;
 
-public class Edge {
+public class Edge implements IEdge{
     private final int destination;
-    public Edge(int dest){
+
+    private final double weight;
+    private int id;
+    private static int count = 0;
+    public Edge(int dest, double weight){
         this.destination = dest;
+        this.id = count;
+        this.weight = weight;
+        count++;
     }
 
     public int getDestination() {
         return destination;
     }
 
+    public int getId() {
+        return id;
+    }
 
+    public double getWeight() {
+        return weight;
+    }
 
+    @Override
+    public String toString(){
+        return "dest: " + (destination + 1);
+    }
 }

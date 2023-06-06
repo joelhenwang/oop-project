@@ -36,7 +36,7 @@ public class HamiltoneanCycle {
             return;
         }
 
-        for(Edge nbr: node.edges){
+        for(IEdge nbr: node.getEdges()){
             int neighb = nbr.getDestination();
             if(!visited[neighb]){
                 //visit and add vertex to the cycle
