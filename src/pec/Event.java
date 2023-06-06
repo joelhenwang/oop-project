@@ -1,18 +1,18 @@
-package discretestochasticsimulation;
+package pec;
 
 import java.util.Random;
 
 public abstract class Event implements IEvent, Comparable<Event>{
-    private double event_duration;
+    private double event_time;
 
     private String event_type;
 
     private Random rand;
-    public void setEventDuration(double mean){
-        event_duration = expDistribution(mean);
+    public void setEventTime(double time, double mean){
+        event_time = time + expDistribution(mean);
     }
-    public double getEventDuration(){
-        return event_duration;
+    public double getEventTime(){
+        return event_time;
     }
     public String getEventType(){
         return event_type;
@@ -29,6 +29,6 @@ public abstract class Event implements IEvent, Comparable<Event>{
 
     @Override
     public int compareTo(Event o) {
-        return Double.compare(this.event_duration, o.getEventDuration());
+        return Double.compare(this.event_time, o.getEventTime());
     }
 }

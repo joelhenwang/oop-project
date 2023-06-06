@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Graph graph = new Graph(5);
-        graph.createRandomGraph(10);
+        WeightedGraph graph = new WeightedGraph(5);
+        graph.createRandomGraph(5);
         HamiltoneanCycle hamil = new HamiltoneanCycle( graph.getNodeList()[1], 5, graph.getNodeList());
         hamil.findCycle();
 

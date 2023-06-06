@@ -1,7 +1,6 @@
 package antcolonyoptimization;
 
-import discretestochasticsimulation.IEvent;
-import discretestochasticsimulation.PEC;
+import pec.IEvent;
 
 public class EventPlayer {
 

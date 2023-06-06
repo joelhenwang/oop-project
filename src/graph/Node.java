@@ -12,12 +12,20 @@ public class Node {
         this.id = id;
     }
 
-    public void addEdgeToNode(int dest, int weight){
-        if( linked.contains(dest ) ){
-            throw new RuntimeException("Edge with node " + dest + " already exists");
+    public void addEdgeToNode( int dest ){
+        if( linked.contains( dest ) ){
+            return;
         }
         linked.add(dest);
-        this.edges.add( new Edge( dest, weight) );
+        this.edges.add( new Edge( dest ) );
+    }
+
+    public void addEdgeToNode( int dest, double weight ){
+        if( linked.contains( dest ) ){
+            return;
+        }
+        linked.add(dest);
+        this.edges.add( new WeigthedEdge( dest, weight) );
     }
 
     public List<Edge> getEdges() {

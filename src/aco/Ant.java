@@ -1,4 +1,6 @@
-package graph;
+package aco;
+
+import graph.Node;
 
 import java.util.ArrayList;
 

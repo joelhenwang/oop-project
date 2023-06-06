@@ -1,16 +1,15 @@
-package discretestochasticsimulation;
+package pec;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class PEC {
-    List<Event> event_list = new ArrayList<>();
+    List<Event> event_list;
     private int event_index = 0;
-    private double current_time;
 
     public PEC(){
-        current_time = 0;
+        event_list = new ArrayList<>();
     }
 
     public Event getNextEvent(){
