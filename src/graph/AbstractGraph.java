@@ -64,4 +64,8 @@ public class AbstractGraph implements IGraph{
     public int getMaxEdges() {
         return max_edges;
     }
+
+    public int get_total_nodes() {
+        return n_nodes;
+    }
 }

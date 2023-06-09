@@ -27,6 +27,7 @@ public class Edge implements IEdge{
 
     @Override
     public String toString(){
-        return "dest: " + (destination + 1);
+
+        return " --> " + (destination + 1) + "\n  " + weight;
     }
 }
