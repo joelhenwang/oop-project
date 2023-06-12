@@ -32,30 +32,36 @@ public class Main {
         PEC pec = new PEC();
 
         for(int n_ant = 1; n_ant <= colony_size; n_ant++){
-            Ant ant = new Ant(node_1);
-
-            Edge next_edge = ant.getNextChosenEdge(pheromones, alpha, beta );
-
+            Ant ant = new Ant( node_1 );
+            System.out.println(ant.getCurrentNode());
+            Edge next_edge = ant.getNextChosenEdge( pheromones, alpha, beta );
+            System.out.println(next_edge);
             pec.addEvent( new AntMoveEvent( curr_time, graph, ant, next_edge, delta ) );
 
-            while (curr_time < sim_time && ants_simulated < colony_size){
+            while (curr_time < sim_time){
 
-                if(ant.getPathEdges().size() > tot_nodes){
-                    if (ant.pathIsHamiltonean(tot_nodes)) {
-                        // create evap events
-                        System.out.println(ant.getPathEdges());
-                        break;
+                Event next_event = pec.getNextEvent();
+                curr_time = next_event.getEventTime();
+
+                if(next_event.getEventType().equals( "evaporate" )){
+
+                    System.out.println("Evaporation event");
+                } else if (next_event.getEventType().equals( "ant_move" )) {
+
+                    next_edge = ant.getNextChosenEdge( pheromones, alpha, beta );
+                    next_event.executeEvent();
+
+                    if(ant.getPathEdges().size() > tot_nodes){
+                        if (ant.pathIsHamiltonean( tot_nodes )) {
+                            // create evap events
+                            System.out.println( ant.getPathEdges() );
+                            break;
+                        }
                     }
                 }
 
-
-
-                next_edge = ant.getNextChosenEdge(pheromones, alpha, beta );
-
                 pec.addEvent( new AntMoveEvent( curr_time, graph, ant, next_edge, delta ) );
-
-
-                break;
+                //break;
             }
         }
 

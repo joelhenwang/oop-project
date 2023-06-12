@@ -7,6 +7,7 @@ import graph.WeightedGraph;
 import pec.Event;
 
 import java.util.List;
+import java.util.Random;
 
 public class AntMoveEvent extends Event{
 
@@ -19,6 +20,7 @@ public class AntMoveEvent extends Event{
 
     public AntMoveEvent( double time, WeightedGraph graph, Ant ant, Edge next_edge, double delta){
 
+        super.rand = new Random();
         this.ant = ant;
         setEventType("ant_move");
         this.next_edge = next_edge;

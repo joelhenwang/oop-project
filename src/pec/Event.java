@@ -7,7 +7,7 @@ public abstract class Event implements IEvent, Comparable<Event>{
 
     private String event_type;
 
-    private Random rand;
+    protected Random rand;
     public void setEventTime(double time, double mean){
         event_time = time + expDistribution(mean);
     }

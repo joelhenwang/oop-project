@@ -93,7 +93,9 @@ public class Ant {
         List<Edge> non_visited_edges = new ArrayList<>();
 
         for ( Edge edge : getNeighEdges()){
-            if (  !visited.get( edge.getDestination() ) ) non_visited_edges.add(edge);
+            if (  !path.contains( edge.getDestination() ) ) {
+                non_visited_edges.add(edge);
+            }
         }
 
         return non_visited_edges;

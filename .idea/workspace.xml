@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e09d383f-4b02-4138-961d-b328b88af1e6" name="Changes" comment="3rd commit">
-      <change afterPath="$PROJECT_DIR$/src/graph/IEdge.java" afterDir="false" />
+    <list default="true" id="e09d383f-4b02-4138-961d-b328b88af1e6" name="Changes" comment="6th commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aco/Ant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aco/Ant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aco/AntMoveEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aco/AntMoveEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aco/Tunnel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aco/Pheromones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antcolonyoptimization/EventPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antcolonyoptimization/ExecuteAntMoveStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antcolonyoptimization/ExecuteEvaporationStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antcolonyoptimization/ExecuteEventStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/antcolonyoptimization/SimulationClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/AbstractGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/AbstractGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Edge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aco/EvaporationEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aco/EvaporationEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/HamiltoneanCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/HamiltoneanCycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/WeightedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/WeightedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/WeigthedEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pec/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pec/Event.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -59,7 +53,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -82,6 +76,7 @@
       <workItem from="1685708101886" duration="955000" />
       <workItem from="1685975703607" duration="9706000" />
       <workItem from="1686057192088" duration="20228000" />
+      <workItem from="1686582805041" duration="323000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1685443156891</created>
@@ -104,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685639450636</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="6th commit">
+      <created>1686328629340</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686328629340</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +116,11 @@
     <MESSAGE value="1st commit" />
     <MESSAGE value="2nd commit" />
     <MESSAGE value="3rd commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd commit" />
+    <MESSAGE value="6th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="6th commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
